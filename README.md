@@ -18,6 +18,7 @@ Requisiti
 Questo progetto richiede 2 moduli facoltativo:
 
 Libreria D3.js (https://d3js.org/)
+
 Il gestore NPM (https://www.npmjs.com/)
 
 Nella soluzione proposta non abbiamo bisogno del primo modulo perchè le libreria viene importata direttamente dall'html
