@@ -11,7 +11,7 @@ var svg = d3.select("body")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
-/* Data in strings like it would be if imported from a csv */
+// Data in strings. You can import that from /data/dataset.json
 
 var data = [
   {name: "Nike", tShirts: "2000", trousers: "800", shoes: "5000", hats: "500", accessories: "2200"},
@@ -48,7 +48,7 @@ var y = d3.scale.linear()
 
 var colors = ["red", "black", "blue", "orange","green"];
 
-
+//Draw Axes and label axes
 function draAxes(){
 var yAxis = d3.svg.axis()
   .scale(y)
@@ -82,7 +82,7 @@ svg.append("g")
 }
 
 function drawing(dataset,colors){
-// Create groups for each series, rects for each segment 
+// Create groups for each series
 
 d3.select(groups).remove();
 var groups = svg.selectAll("g.cost").data(dataset)
@@ -96,6 +96,7 @@ var groups = svg.selectAll("g.cost").data(dataset)
 
 d3.select(rect).remove();
 var i=0
+//Create rects for each segment
 var rect = groups.selectAll("rect").data(function(d) { return d; })
    rect.exit().remove();
    rect.enter()
@@ -126,31 +127,6 @@ var rect = groups.selectAll("rect").data(function(d) { return d; })
 
 
 
-function modifyDataY(selected){
- 
-  data=dataset;
-  var temp=0;
-  var temp=0;
-  var count=1;
-  if(count==0){
-  temp=data[0][0]["y0"];
-  temp1=data[1][0]["y0"];
-  data[0][0]["y0"]=temp1
-  data[1][0]["y0"]=temp
-  count=1;
-}else{
-  temp=data[0][0]["y0"];
-  temp1=data[1][0]["y0"];
-  data[0][0]["y0"]=temp1
-  data[1][0]["y0"]=temp
-  count=0;
-}
-  console.log(count);
-  console.log(data);
-  drawing(data);
-
-;
-}
 
 //First try to swap Section
 /*
@@ -185,7 +161,7 @@ function modify(selected){
 */
 
 
-
+//Swap Section function
 function modifyWithIndex(selected){
   data=dataset;
   colori=colors;
@@ -217,21 +193,19 @@ if(40<=indice && indice <=49){
   var z=i+1;
   for (j = 0; j <= 9; j++) {
   
-  temp1=data[i][j]["y0"]; //800
-  temp2=data[i+1][j]["y"];  //800
-  temp3=data[i+1][j]["y0"]; //0
+  temp1=data[i][j]["y0"]; 
+  temp2=data[i+1][j]["y"];  
+  temp3=data[i+1][j]["y0"]; 
 
 
 
- //nero
+
   data[i][j]["y0"]=temp1+temp2;
-//rosso
   data[i+1][j]["y0"]=temp1;
 }
  data[i]=datatemp1;
  data[i+1]=datatemp;
-   console.log(data);
-   drawing(data,colors);
+ drawing(data,colors);
 }
 
 
@@ -242,15 +216,12 @@ drawing(dataset,colors);
 count=1;
 }
 
-
+//Event on mouse click
 d3.selectAll("rect")
     .on("click", function(d){
     d3.select(this)
     var ind = d3.select(this).attr("index");
-    console.log(this);
-    console.log(count);
-    console.log(ind);
-    console.log(dataset);
+    //Modify section on event, we use this for keeping track of rect
     modifyWithIndex(this);
    });
 
