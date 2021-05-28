@@ -11,8 +11,8 @@ Usa le scale di D3.js per mappare il dominio delle variabili (che è arbitrario)
 Il dataset è stato costruito arbitrariamente usando come dominio di riferimento le marche sportive.
 Nell'asse delle x troviamo le marche.
 Nell'asse delle y troviamo i guadagni espressi in milioni.
+I dati utilizzati sono stati inventati, quindi non fanno riferimento a nessuna fonte.
 
-PS:I dati utilizzati sono stati inventati, quindi non fanno riferimento a nessuna fonte.
 Requirements
 ------------
 Questo progetto richiede 2 moduli facoltativo:
