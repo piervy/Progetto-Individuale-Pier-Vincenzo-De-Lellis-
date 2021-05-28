@@ -15,7 +15,7 @@ I dati utilizzati sono stati inventati, quindi non fanno riferimento a nessuna f
 
 Requisiti
 ------------
-Questo progetto richiede 2 moduli facoltativo:
+Questo progetto richiede 2 moduli facoltativi:
 
 Libreria D3.js (https://d3js.org/)
 
