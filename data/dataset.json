@@ -1,0 +1,13 @@
+[
+  {name: "Nike", tShirts: "2000", trousers: "800", shoes: "5000", hats: "500", accessories: "2200"},
+  {name: "Adidas", tShirts: "2000", trousers: "700", shoes: "5000", hats: "500", accessories: "2000"},
+  {name: "Lotto", tShirts: "2000", trousers: "600", shoes: "5000", hats: "500", accessories: "1600"},
+  {name: "Puma", tShirts: "2000", trousers: "500", shoes: "5000", hats: "500", accessories: "1400"},
+  {name: "Rebook", tShirts: "2000", trousers: "500", shoes: "5000", hats: "500", accessories: "1500"},
+  {name: "Asics", tShirts: "2000", trousers: "600", shoes: "5000", hats: "500", accessories: "1300"},
+  {name: "Umbro", tShirts: "2000", trousers: "400", shoes: "5000", hats: "500", accessories: "1100"},
+  {name: "Diadora", tShirts: "2000", trousers: "500", shoes: "5000", hats: "500", accessories: "900"},
+  {name: "Fila", tShirts: "2000", trousers: "700", shoes: "5000", hats: "500", accessories: "1100"},
+  {name: "Champion", tShirts: "2000", trousers: "300", shoes: "5000", hats: "500", accessories: "1100"}
+
+]
