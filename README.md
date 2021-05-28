@@ -34,6 +34,9 @@ Infine è possibile interagire in due modi differenti con lo stacked bars:
 
 Examples 
 ------------
+![StackedBars1](https://user-images.githubusercontent.com/51997286/119980649-de580780-bfbc-11eb-8fb6-7b1b479584b1.png)
+![StackedBars3](https://user-images.githubusercontent.com/51997286/119980714-f62f8b80-bfbc-11eb-81e4-f3fd5eecdf1e.png)
+![StackedBars2](https://user-images.githubusercontent.com/51997286/119980699-ef087d80-bfbc-11eb-802f-56e1edde1376.png)
 
 
 
