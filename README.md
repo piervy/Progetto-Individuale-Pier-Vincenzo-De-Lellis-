@@ -28,8 +28,11 @@ Come utilizzare
 ------------
 Per utilizzarlo bisogna navigare fino cartella dove si trova il file "index.html"dal terminale. Successivamente runnare il comando http-server (dopo averlo installato con il comando npm install -g http-server) e aprile il proprio browser di riferimento su "http://localhost:8080/" (Testato sia su Chrome che su Firefox).
 Infine è possibile interagire in due modi differenti con lo stacked bars:
+
 1.Cliccando con il pulsante sinistro su una sezione della barra, per tutte le barre questa si scambierà di posto
+
 2.Muovendo il mouse su una sezione della barra è possibile visualizzare il valore relativo di quest'ultima.
+
 
 
 
